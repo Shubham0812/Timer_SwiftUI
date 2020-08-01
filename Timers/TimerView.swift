@@ -53,7 +53,7 @@ struct TimerView: View {
                     self.timerStarted.toggle()
                     if (self.timerStarted) {
                         self.minutes = 0
-                        self.seconds = 1
+                        self.seconds = 0  //to make the timer start at 0 seconds.
                         self.milliSeconds = 0
                         self.resetColors()
                         
