@@ -112,7 +112,8 @@ struct TimerLabel: View {
         ZStack {
             Text("\(minutes.toString()):\(seconds.toString()):\(milliSeconds.toString())")
                 .font(.system(size: 42, weight: .bold, design: .monospaced))
-                .colorInvert()
+                .foregroundColor(.green) //or any color of choice.
+                //.colorInvert()
         }
     }
 }
